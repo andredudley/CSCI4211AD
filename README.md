@@ -1,2 +1,2 @@
 # CSCI4211AD
-Andre's CSCI 4221 Repository
+My name is Andre, and welcome to my CSCI4221 repository
