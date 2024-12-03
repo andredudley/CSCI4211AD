@@ -1,0 +1,134 @@
+/* Basic Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #4b2e73;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar Navigation */
+#sidebar {
+    background-color: #6f4c9a;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #5a3e80;
+    transition: background 0.3s ease;
+}
+
+#sidebar ul li:hover {
+    background-color: #4e3571;
+}
+
+/* Main Content Area */
+main {
+    flex-grow: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #f3f3f3;
+}
+
+/* Dashboard and Card Styling */
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+h1, h2 {
+    color: #6f4c9a;
+    margin-bottom: 15px;
+}
+
+.overview {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #d6cde0;
+    color: #4b2e73;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #8e69b5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a5a9c;
+}
+
+/* Input Styling */
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Upcoming Sessions Section */
+.upcoming-sessions {
+    margin-top: 30px;
+}
