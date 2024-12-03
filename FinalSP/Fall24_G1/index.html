@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <nav id="sidebar">
+    <h2>Study Planner</h2>
+    <ul>
+      <li onclick="showDashboard()">Dashboard</li>
+      <li onclick="showNewSession()">Create Study Session</li>
+      <li onclick="showStudyPlan()">Create Study Plan</li>
+      <li onclick="showUpcomingSessions()">Upcoming Sessions</li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main id="content">
+    <!-- Dashboard Section (Landing Page) -->
+    <section id="dashboard" class="screen active">
+      <h1>Dashboard</h1>
+      <div class="overview">
+        <div class="card">Total Study Time: 5 hrs</div>
+        <div class="card">Next Session: Calculus</div>
+        <div class="card">Top Subject: Math</div>
+      </div>
+      <div class="actions">
+        <button onclick="showNewSession()">+ New Session</button>
+        <button onclick="showStudyPlan()">+ New Study Plan</button>
+      </div>
+      <div class="upcoming-sessions">
+        <h2>Upcoming Sessions</h2>
+        <p>Math - Tomorrow at 2:00 PM</p>
+      </div>
+    </section>
+
+    <!-- Create Study Session Section -->
+    <section id="newSession" class="screen">
+      <h1>Create a Study Session</h1>
+      <label>Subject: <input type="text" placeholder="e.g., Math"></label>
+      <label>Date: <input type="date"></label>
+      <label>Time: <input type="time"></label>
+      <label>Duration: <input type="number" placeholder="Minutes"></label>
+      <button onclick="saveSession()">Save Session</button>
+    </section>
+
+    <!-- Create Study Plan Section -->
+    <section id="studyPlan" class="screen">
+      <h1>Create a Study Plan</h1>
+      <label>Plan Name: <input type="text" placeholder="e.g., Finals Preparation"></label>
+      <label>Start Date: <input type="date"></label>
+      <label>End Date: <input type="date"></label>
+      <label>Daily Study Goal (hours): <input type="number" min="1" placeholder="e.g., 2 hours"></label>
+      <button onclick="saveStudyPlan()">Save Study Plan</button>
+    </section>
+
+    <!-- Upcoming Sessions Section -->
+    <section id="upcomingSessions" class="screen">
+      <h1>Upcoming Sessions</h1>
+      <p>Here, your scheduled study sessions will appear.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
